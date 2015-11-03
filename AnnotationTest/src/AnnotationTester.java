@@ -1,12 +1,16 @@
 import static java.lang.System.*; //Static import, tar in så vi alltid har tillgång till System-klassen
 
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+
+@Retention(RetentionPolicy.RUNTIME)
 @interface PersonAnnotation{ 
 	String name(); //metoder skriver som abstrakta
 	int age();
 }
 
 //marker Annotation
-@interface Text{
+@interface Texts{
 	
 }
 
